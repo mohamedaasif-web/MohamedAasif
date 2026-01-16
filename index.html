@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Aasif</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="home" id="home">
+    <div class="home-img">
+      <img src="images/hero.avif" class="free-image">
+    </div>
+
+    <div class="home-content">
+      <h1 class="name">Hello , I'M Mohamed Aasif</h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>
+        I'm a student with a strong interest in
+        web development!,
+        experienced in building modern,
+        responsive, and dynamic web Page..
+      </p>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/mohamed-aasif-587543371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/mohamedaasif-web"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/aasiii__rx__?igsh=MXJ1OHRtbjB6d25pNw=="><i
+            class="fa-brands fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="project-section" id="project">
+    <h2 class="heading">My Latest <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+      <div class="project-box">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>RedStore</h3>
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500" class="project-img">
+        <h4>Languages :</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
+        <a href="https://red-store-web-bice.vercel.app/" class="btn">View Project</a>
+      </div>
+
+      <div class="project-box">
+        <i class="fa-brands fa-square-facebook"></i>
+        <h3>Facebook Clone</h3>
+        <img src="images/boliviainteligente-H88PXUVjd7U-unsplash.jpg" class="project-img">
+        <h4>Languages :</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
+        <a href="https://facebook-clone-black-ten.vercel.app/" class="btn">View Project</a>
+      </div>
+
+      <div class="project-box">
+        <i class="fa-solid fa-gopuram"></i>
+        <h3>Tenkasi Tourism</h3>
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=500" class="project-img">
+        <h4>Languages :</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <a href="https://tenkasi-tourism.vercel.app/" class="btn">View Project</a>
+      </div>
+
+    </div>
+    <a href="my_project.html"><button class="btn explore">Explore more !</button></a>
+
+  </section>
+
+
+  <section class="contact">
+    <div class="contact-box">
+      <h1>Contact Me !</h1>
+
+      <form action="https://formspree.io/f/xvzzzgaj" method="POST">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" name="Name :" required>
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" placeholder="Your email" name="E-mail : " required>
+        </div>
+
+        <div class="field">
+          <label>Message</label>
+          <textarea placeholder="Write your message..." name="Message :" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project-box').forEach(box => {
+      observer.observe(box);
+    });
+
+  </script>
+</body>
+
+</html>
